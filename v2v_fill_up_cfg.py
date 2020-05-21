@@ -15,6 +15,8 @@ tp_libvirt_v2v_options_pattern = "v2v/tests/cfg/v2v_options.cfg"
 tp_libvirt_func_test_xen_pattern = "v2v/tests/cfg/function_test_xen.cfg"
 tp_libvirt_func_test_esx_pattern = "v2v/tests/cfg/function_test_esx.cfg"
 tp_libvirt_convert_file_pattern = "v2v/tests/cfg/convert_from_file.cfg"
+tp_libvirt_libnbd_pattern = "v2v/tests/cfg/libnbd/*.cfg"
+tp_libvirt_pyvmomi_pattern = "v2v/tests/cfg/pyvmomi/query_changed_disk_areas.cfg"
 
 all_pattern = "v2v/tests/cfg/.*.cfg"
 
@@ -25,6 +27,7 @@ v2v_option= {}
 func_xen = {}
 func_esx = {}
 convert_file = {}
+pyvmomi = {}
 all_cfg = {}
 
 all_pattern_dict = {vt_convert_src_pattern:vt_src,
@@ -34,6 +37,7 @@ all_pattern_dict = {vt_convert_src_pattern:vt_src,
                tp_libvirt_specific_kvm_pattern:specific_kvm,
                tp_libvirt_func_test_esx_pattern:func_esx,
                tp_libvirt_func_test_xen_pattern:func_xen,
+               tp_libvirt_pyvmomi_pattern:pyvmomi,
                all_pattern:all_cfg}
 
 def print_help():
